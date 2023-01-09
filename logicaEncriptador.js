@@ -7,10 +7,10 @@ var btnDesencriptar = document.querySelector(".btnDesencriptar");
 function encriptar(){
     var texto = document.getElementById("cajaText").value.toLowerCase();
     var textEncriptado = texto.replace(/e/img,"enter");
-    var textEncriptado = textEncriptado.replace(/o/img, "ober");
-    var textEncriptado = textEncriptado.replace(/i/img, "imes");
-    var textEncriptado = textEncriptado.replace(/a/img, "ai");
-    var textEncriptado = textEncriptado.replace(/u/img, "ufat");
+    textEncriptado = textEncriptado.replace(/o/img, "ober");
+    textEncriptado = textEncriptado.replace(/i/img, "imes");
+    textEncriptado = textEncriptado.replace(/a/img, "ai");
+    textEncriptado = textEncriptado.replace(/u/img, "ufat");
     document.getElementById("graficaDer").style.display = "none";
     document.getElementById("tituloGrafica").style.display = "none";
     document.getElementById("textoGrafica").innerHTML = textEncriptado;
@@ -22,10 +22,10 @@ function encriptar(){
 function desencriptar(){
     var texto = document.getElementById("cajaText").value.toLowerCase();
     var textEncriptado = texto.replace(/enter/img,"e");
-    var textEncriptado = textEncriptado.replace(/ober/img, "o");
-    var textEncriptado = textEncriptado.replace(/imes/img, "i");
-    var textEncriptado = textEncriptado.replace(/ai/img, "a");
-    var textEncriptado = textEncriptado.replace(/ufat/img, "u");
+    textEncriptado = textEncriptado.replace(/ober/img, "o");
+    textEncriptado = textEncriptado.replace(/imes/img, "i");
+    textEncriptado = textEncriptado.replace(/ai/img, "a");
+    textEncriptado = textEncriptado.replace(/ufat/img, "u");
     document.getElementById("graficaDer").style.display = "none";
     document.getElementById("tituloGrafica").style.display = "none";
     document.getElementById("textoGrafica").innerHTML = textEncriptado;
