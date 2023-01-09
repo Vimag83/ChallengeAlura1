@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge Encriptador</title> <!- define el titulo en el navegador->
+    <link rel="stylesheet" href="style.css"> <!- esto referencia la clase donde se encuentras los style ->
+    
+</head>
+<body>
+    
+    <div class="caja" >
+        <div class="logo">
+            <img class="imgLogo" src="logoCan2.png" >
+            <h1 class="titulo">Encriptador de mensajes</h1>
+
+        </div>
+        <div class="izquierda">
+            <input class="cajaTexto" type=" text" id="cajaText" placeholder="Por Favor Ingrese el texto aqui">
+            
+        </div>
+        <div class="derecha">
+            <img id="graficaDer" src="Muñeco.png">
+            <h1 id="tituloGrafica">Ningun mensaje fue encontrado</h1>
+            <textarea  id="textoGrafica" name="name" rows="8" cols="80">Ingrese el texto que desea convertir</textarea>
+            <button type="button" id="btnCopiar" name="button" onclick="copiar()">Copiar</button>
+
+        </div>
+        <div class="botones">            
+            <p> &#9888;  Ingrese solo letras minusculas y sin acentos</p>
+            <button type="button" id="btnEncriptar" onclick="encriptar()" >Encriptar</button>
+            <button type="button" id="btnDesencriptar" onclick="desencriptar()" >Desencriptar</button>
+        </div>
+    </div>
+    
+    
+</body>
+<script src="logicaEncriptador.js"></script>
+</html>
